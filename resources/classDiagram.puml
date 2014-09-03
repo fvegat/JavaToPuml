@@ -1,0 +1,41 @@
+@startuml
+class Main
+interface DiagramObject <<interface>>{
+    -nombre:String
+    -numero:int
+    
+    +andyPloy(nombre:String):void
+}
+abstract ClassObject
+abstract ClassRelation
+class JavaFileParser
+class PumlWriter
+class InheritanceRelation
+class ImplementationRelation
+class DependencyRelation
+class CompositionRelation
+class AggregationRelation
+class InterfaceClassObject
+class AbstractClassObject
+class ConcreteClassObject
+
+DiagramObject <|.. ClassObject
+DiagramObject <|.. ClassRelation
+
+ClassObject <|.. InterfaceClassObject
+ClassObject <|.. AbstractClassObject
+ClassObject <|.. ConcreteClassObject
+
+ClassRelation <|.. InheritanceRelation
+ClassRelation <|.. ImplementationRelation
+ClassRelation <|.. DependencyRelation
+ClassRelation <|.. CompositionRelation
+ClassRelation <|.. AggregationRelation
+
+Main --> ClassObject
+Main --> JavaFileParser
+Main --> PumlWriter
+
+ClassObject *-- ClassRelation
+
+@enduml
