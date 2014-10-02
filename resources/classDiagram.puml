@@ -1,11 +1,6 @@
 @startuml
 class Main
-interface DiagramObject <<interface>>{
-    -nombre:String
-    -numero:int
-    
-    +andyPloy(nombre:String):void
-}
+interface DiagramObject
 abstract ClassObject
 abstract ClassRelation
 class JavaFileParser

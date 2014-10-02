@@ -2,17 +2,16 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package src.classObjects;
+package model.classObjects;
 
 import constants.ClassTypes;
-import src.DiagramObject;
 
 /**
  *
  * @author
  * fvega
  */
-public class InterfaceObjectClass extends ClassObject {
+public class InterfaceClassObject extends ClassObject {
 
     @Override
     public String draw() {

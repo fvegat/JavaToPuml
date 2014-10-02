@@ -2,9 +2,9 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package src.classObjects;
+package model.classObjects;
 
-import src.DiagramObject;
+import model.diagram.DiagramObject;
 
 /**
  *

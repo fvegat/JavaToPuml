@@ -2,21 +2,20 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package src.classObjects;
+package model.classObjects;
 
 import constants.ClassTypes;
-import src.DiagramObject;
 
 /**
  *
  * @author
  * fvega
  */
-public class ConcreteClassObject extends ClassObject {
+public class AbstractClassObject extends ClassObject {
 
     @Override
     public String draw() {
-        return ClassTypes.CONCRETE + " " + this.name;
+        return ClassTypes.ABSTRACT + " " + this.name;
     }
     
 }

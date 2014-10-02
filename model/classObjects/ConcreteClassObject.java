@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package src.classObjects;
+package model.classObjects;
 
 import constants.ClassTypes;
 
@@ -11,11 +11,11 @@ import constants.ClassTypes;
  * @author
  * fvega
  */
-public class AbstractClassObject extends ClassObject {
+public class ConcreteClassObject extends ClassObject {
 
     @Override
     public String draw() {
-        return ClassTypes.ABSTRACT + " " + this.name;
+        return ClassTypes.CONCRETE + " " + this.name;
     }
     
 }

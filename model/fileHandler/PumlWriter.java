@@ -2,10 +2,10 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package src;
+package model.fileHandler;
 
 import java.util.List;
-import src.classObjects.ClassObject;
+import model.classObjects.ClassObject;
 
 /**
  *
