@@ -1,0 +1,72 @@
+@startuml
+class Main
+class AggregationRelation
+class ImplementationRelation
+class DependencyRelation
+abstract ClassRelation {
+  #relation:null
+  #drawable:null
+}
+class InheritanceRelation
+class CompositionRelation
+class JavaClassParser
+class JavaSourceParser
+class JavaClassLoader {
+  -rootSourceDirectory:null
+  -CLASS_FILE_EXTENSION:null
+}
+class PumlWriter
+class ParserFactory
+interface JavaParser
+interface DiagramObject
+class ClassTypeFactory
+class AbstractClassObject
+class ConcreteClassObject
+class PrivateClassAttribute
+class ProtectedClassAttribute
+class AttributeTypeFactory
+class InterfaceClassObject
+abstract ClassAttribute {
+  #name:null
+  #type:null
+}
+class PublicClassAttribute
+abstract ClassObject {
+  #name:null
+  #relations:null
+  #attributes:null
+}
+class ClassRelationTypes {
+  +DEPENDENCY:null
+  +COMPOSITION:null
+  +AGGREGATION:null
+  +INHERITANCE:null
+  +IMPLMENTATION:null
+}
+class ClassTypes {
+  +ABSTRACT:null
+  +INTERFACE:null
+  +CONCRETE:null
+}
+class ClassVisibilityTypes {
+  +PRIVATE:null
+  +PUBLIC:null
+  +PROTECTED:null
+}
+ClassRelation <|-- AggregationRelation
+ClassRelation <|-- ImplementationRelation
+ClassRelation <|-- DependencyRelation
+DiagramObject <|.. ClassRelation
+ClassRelation <|-- InheritanceRelation
+ClassRelation <|-- CompositionRelation
+JavaParser <|.. JavaClassParser
+JavaParser <|.. JavaSourceParser
+ClassObject <|-- AbstractClassObject
+ClassObject <|-- ConcreteClassObject
+ClassAttribute <|-- PrivateClassAttribute
+ClassAttribute <|-- ProtectedClassAttribute
+ClassObject <|-- InterfaceClassObject
+DiagramObject <|.. ClassAttribute
+ClassAttribute <|-- PublicClassAttribute
+DiagramObject <|.. ClassObject
+@enduml
